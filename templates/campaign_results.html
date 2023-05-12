@@ -1,37 +1,36 @@
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <div id="loading">
-      <i class="fa fa-spinner fa-spin fa-4x"></i>
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
     </div>
     
     <div style="display:none;" id="campaignResults">
-      <div class="row">
+        <div class="row">
         <h1 class="page-header" id="page-title">Results for campaign.name</h1>
-      </div>
-      
-      <div class="row">
+        </div>
+        
+        <div class="row">
         <a href="/campaigns" class="btn btn-default">
-          <i class="fa fa-arrow-circle-o-left fa-lg"></i> Back
+            <i class="fa fa-arrow-circle-o-left fa-lg"></i> Back
         </a>
         
         <div class="btn-group">
-          <button type="button" id="exportButton" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <button type="button" id="exportButton" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             <i class="fa fa-file-excel-o"></i> Export CSV
             <i class="fa fa-caret-down"></i>
-          </button>
-          
-          <ul class="dropdown-menu" aria-labelledby="exportButton">
+            </button>
+            
+            <ul class="dropdown-menu" aria-labelledby="exportButton">
             <li><a href="#" onclick="exportAsCSV('results')">Results</a></li>
             <li><a href="#" onclick="exportAsCSV('events')">Raw Events</a></li>
-          </ul>
+            </ul>
         </div>
         
         <button id="complete_button" type="button" class="btn btn-blue" data-toggle="tooltip" onclick="completeCampaign()">
-          <i class="fa fa-flag-checkered"></i> Complete
+            <i class="fa fa-flag-checkered"></i> Complete
         </button>
         
         <button type="button" class="btn btn-danger" data-toggle="tooltip" onclick="deleteCampaign()">
-          <i class="fa fa-trash-o fa-lg"></i> Delete
+            <i class="fa fa-trash-o fa-lg"></i> Delete
         </button>
         
         <button id="refresh_btn" type="button" class="btn btn-blue" data-toggle="tooltip" onclick=
-  
